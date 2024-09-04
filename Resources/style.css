@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+}
+
+header {
+    background-color: gray;
+    text-align: center;
+    color:white;
+    padding: 5px 0px
+}
+
+main {
+    margin: auto;
+    width: 75%;
+}
+
+section {
+    background-color: bisque;
+    padding: 5px 20px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+@media (max-width:768px) {
+    body {
+        background-color: #CCCCCC;
+    }
+
+    main {
+        width: 100%;
+    }
+    
+    section {
+        background-color: white;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+    
+    h2 {
+        text-align: center;
+        font-size: 22px;
+    }
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.cita-Milei {
+    background-color: lightgray;
+    border-left: 3px gray solid;
+    margin: 3px 0px;
+    padding: 3px 0px;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.box {
+    box-shadow: 2px 2px 5px 5px #111111;
+    padding: 5px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.box1 {
+    background-color: white;
+}
+
+.box2 {
+    background-color: lightblue;
+    border: 3px black solid;
+}
+
+.relativa {
+    position: relative;
+    background-color: lightblue;
+    border-radius: 5px;
+    margin-bottom: 70px;
+    padding: 5px;
+    top: 20px;
+    left: 10px;
+}
+
+.absoluta {
+    position: absolute;
+    background-color: yellowgreen;
+    border-radius: 5px;
+    padding: 3px;
+    left: 60%;
+    top: 60%;
+}
+
+.elementos-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-items: center;
+    gap: 10px
+}
+
+.egrid {
+    background-color: lightblue;
+    border-radius: 5px;
+    padding: 0px 50px;
+    width: auto;
+}
+
+@media (max-width:768px) {
+    .egrid {
+        padding: 0px 20px
+    }
+}
+
+.animacion {
+    background-color: green;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 50%;
+    transition: 1s ease-in;
+}
+
+.animacion:hover {
+    background-color: blue;
+    border-radius: 0px;
+}
+
+@keyframes movlat {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(600px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.mover {    
+    background-color: red;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    animation: movlat 5s infinite;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
